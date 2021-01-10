@@ -25,7 +25,10 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# Call an api
 gem 'faraday'
+
+# Keep information secret
 gem 'figaro'
 
 # Use ActiveStorage variant
