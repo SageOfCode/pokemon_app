@@ -1,0 +1,10 @@
+<h1>Welcome to the Pokemon App</h1>
+
+<p>Please get started by searching for a Pokemon below:</p>
+
+<%= form_tag '/pokemon', method: :get do %>
+  <div>
+    <%= text_field_tag :pokemon %>
+    <%= submit_tag "Search" %>
+  </div>
+<% end %>
