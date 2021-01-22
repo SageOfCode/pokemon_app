@@ -1,1 +1,15 @@
-<h1>Pikachu</h1>
+<div class="result-box">
+  <div align="center">
+    <h1>Pokémon Name</h1>
+  </div>
+
+  <!-- Our API call will go here -->
+
+  <%= form_tag '/pokemon', method: :get do %>
+        <div align="center" class="poke-search">
+          <p>Search for another Pokémon:</p>
+          <%= text_field_tag :pokemon %>
+          <%= submit_tag "Search" %>
+        </div align="center">
+      <% end %>
+</div>
