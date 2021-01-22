@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Pokémon App
 
-Things you may want to cover:
+> This app will be used to get an introduction to API consumption and refactoring in rails.
 
-* Ruby version
+* Fork and clone this repository. Run bundle install.
 
-* System dependencies
+* We will be consuming this [Pokémon API.](https://pokeapi.co/) 
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Download [Postman](https://www.postman.com/downloads/) here. We will be using Postman to call our API.
