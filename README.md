@@ -15,7 +15,7 @@
   
 ## What it does
 
-> This app will be used to get an introduction to API consumption and refactoring in rails. This project part of a Service-Oriented Architecture (SOA) application that provides users with Pokemon information based on search parameters that the user provides.
+> This app will be used to get an introduction to API consumption and refactoring in rails. This project follows Service-Oriented Architecture (SOA) that provides users with Pokemon information based on search parameters that the user provides.
 
 * Fork and clone this repository. Run bundle install.
 
@@ -24,8 +24,6 @@
 * Download [Postman](https://www.postman.com/downloads/) here. We will be using Postman to call our API.
 
 ## How to Install
-
-GTFO-FE is hosted on [Heroku](https://gtfo-fe.herokuapp.com/), where you'll be able to view its functionality to the fullest.
 
 For usage on your local machine follow the instructions listed below:
 
@@ -53,8 +51,6 @@ visit localhost:3000 in your web browser
 ## Learning Goals
 
   * Consume external APIs
-
-  * Build API's that return JSON responses
 
   * Refactor code for better code for improved organization/readability
 
