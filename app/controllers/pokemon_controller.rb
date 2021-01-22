@@ -1,5 +1,5 @@
 class PokemonController < ApplicationController
   def index
-    pokemon = params[:pokemon]
+    require 'pry'; binding.pry
   end
 end
