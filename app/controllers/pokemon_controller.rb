@@ -1,5 +1,8 @@
 class PokemonController < ApplicationController
   def index
-    require 'pry'; binding.pry
+    pokemon = params[:pokemon]
+    conn = Faraday.new("https://pokeapi.co")
+    response = conn.get("/api/v2/pokemon-form/#{pokemon}/")
+    @pokemon = JSON.parse(response.body, symbolize_names: true)
   end
 end

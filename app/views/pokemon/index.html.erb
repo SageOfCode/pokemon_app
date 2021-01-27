@@ -1,10 +1,13 @@
 <div class="result-box">
   <div align="center">
-    <h1>Pokémon Name</h1>
+    <h1><%= @pokemon[:name].capitalize %></h1>
   </div>
 
-  <!-- Our API call will go here -->
-
+  <div align="center">
+    <p>Number: <%= @pokemon[:id] %></p>
+    <%= image_tag "#{@pokemon[:sprites][:front_default]}" %>
+  </div>
+  
   <%= form_tag '/pokemon', method: :get do %>
     <div align="center" class="poke-search">
       <p>Search for another Pokémon:</p>
