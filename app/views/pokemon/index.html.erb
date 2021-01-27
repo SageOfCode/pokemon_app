@@ -1,11 +1,11 @@
 <div class="result-box">
   <div align="center">
-    <h1><%= @pokemon[:name].capitalize %></h1>
+    <h1><%= @pokemon.name %></h1>
   </div>
 
   <div align="center">
-    <p>Number: <%= @pokemon[:id] %></p>
-    <%= image_tag "#{@pokemon[:sprites][:front_default]}" %>
+    <p>Number: <%= @pokemon.number %></p>
+    <%= image_tag "#{@pokemon.image}" %>
   </div>
   
   <%= form_tag '/pokemon', method: :get do %>
