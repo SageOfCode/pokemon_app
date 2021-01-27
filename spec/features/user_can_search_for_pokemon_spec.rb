@@ -11,7 +11,8 @@ RSpec.describe "as a visitor" do
 
       expect(current_path).to eq(pokemon_index_path)
 
-      expect(page).to have_content("Pokémon Name") 
+      expect(page).to have_content("Pikachu") 
+      expect(page).to have_content("Number: 25") 
     end
   end
 end
