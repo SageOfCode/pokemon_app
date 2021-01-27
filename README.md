@@ -35,6 +35,7 @@ firgaro install
 rails server
 visit localhost:3000 in your web browser
 ```
+You can find a video walkthrough for setting up the initial API call [here](https://www.youtube.com/watch?v=NXg3oE5JMm0&pbjreload=101)
 
 ## Dependencies
 
