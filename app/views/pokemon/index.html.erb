@@ -10,6 +10,7 @@
   <div align="center">
     <p>Number: <%= @pokemon.number %></p>
     <%= image_tag "#{@pokemon.image}" %>
+    <%= image_tag "#{@pokemon.shiny}" %>
   </div>
   
   <%= form_tag '/pokemon', method: :get do %>
