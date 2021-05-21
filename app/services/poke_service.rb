@@ -1,7 +1,7 @@
 class PokeService
   class << self 
     def call_for_a_pokemon(pokemon)
-      response = conn.get("/api/v2/pokemon-form/#{pokemon}/")
+      response = conn.get("/api/v2/pokemon-form/#{pokemon.downcase}/")
       parse_data(response)
     end
 
