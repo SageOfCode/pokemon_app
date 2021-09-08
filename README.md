@@ -5,6 +5,8 @@
 # Pokémon App
 
 You can find a video walkthrough for setting up the initial API call [here](https://www.youtube.com/watch?v=NXg3oE5JMm0&pbjreload=101)
+You can find a video walkthrough for exposing an endpoint [here](https://www.youtube.com/watch?v=BkY1fWEFmYg&t=536s)
+
 
 ## Table of Contents
   - [What it does](#what-it-does)
