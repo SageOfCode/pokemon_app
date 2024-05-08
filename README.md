@@ -63,8 +63,8 @@ visit localhost:3000 in your web browser
 
 ## Licenses
 
-  * Ruby 2.5.3
-  * Rails 5.2.4.4
+  * Ruby 3.2.2
+  * Rails 6.1.4
   
 ## Contact
     
