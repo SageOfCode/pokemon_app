@@ -12,7 +12,7 @@ RSpec.describe "Pokemon endpoint" do
 
       expect(response).to be_successful
       expect(response.status). to eq(200)
-      expect(response.content_type). to eq("application/json")
+      expect(response.content_type). to eq("application/json; charset=utf-8")
       mew = PocketMonster.last
 
       pokemon = JSON.parse(response.body, symbolize_names: true)
