@@ -50,6 +50,16 @@ visit localhost:3000 in your web browser
 
 * The [SimpleCov](https://github.com/simplecov-ruby/simplecov) gem was used to ensure that we covered 100% of our code with unit testing. 
 
+- Docker - [Working with Docker](https://www.digitalocean.com/community/tutorials/containerizing-a-ruby-on-rails-application-for-development-with-docker-compose)
+
+## Using Docker
+
+```bash
+# Start the containers using Docker compose
+docker-compose build
+docker-compose run app rails db:create db:migrate
+docker-compose up
+```
 
 ## Learning Goals
 
@@ -63,8 +73,8 @@ visit localhost:3000 in your web browser
 
 ## Licenses
 
-  * Ruby 2.5.3
-  * Rails 5.2.4.4
+  * Ruby 3.2.2
+  * Rails 6.1.4
   
 ## Contact
     
