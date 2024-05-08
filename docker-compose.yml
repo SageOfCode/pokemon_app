@@ -1,0 +1,30 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:13
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: pokemon_app_development
+      POSTGRES_USER: pokemon_app
+      POSTGRES_PASSWORD: password
+      
+  app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    command: bash -c "rm -f tmp/pids/server.pid && rails server -b '0.0.0.0'"
+    volumes:
+      - .:/pokemon_app
+      - bundle_cache:/usr/local/bundle
+    ports:
+      - "3000:3000"
+    environment:
+      DATABASE_URL: postgres://pokemon_app:password@db/pokemon_app_development
+      PORT: 3000
+    depends_on:
+      - db
+
+volumes:
+  postgres_data:
+  bundle_cache:
